@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<script src = "script.js"></script>
+	</head>
+	<body>
+		<form>
+			X1: <input type="text" id="x1" placeholder="Введите первое число">
+			<input type="radio" name="answer" value="1" checked>Сумма всех чисел от Х1 до Х2
+			<br>
+			X2: <input type="text" id="x2" placeholder="Введите второе число">
+			<input type="radio" name="answer" value="2">Произведение всех чисел от Х1 до Х2
+			<br><br>
+			<input type="button" value="Запуск" onclick="buttonClick()">
+			<input type="button" value="Очистить" onclick="form.reset()">
+			<b><div id="result"></div><br>
+			Простые числа на интервале:
+			<div id="prime"></div></b>
+		</form>
+	</body>
+</html>

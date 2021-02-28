@@ -10,7 +10,8 @@
 </head>
 <body>
 	<header class="header">
-		<div class="wrapper">
+		<div class="wrapper header__wrapper">
+			<img src="assets/pngwing.png" alt="galaxy">
 			<div class="header__top">
 				<div class="header__logo"></div>
 				<nav class="header__nav">
@@ -22,6 +23,15 @@
 					</ul>
 				</nav>
 			</div>
+			<div class="burger">
+                <img src="assets/burg.png" alt="">
+            </div>
+            <div class="menu">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#id_about">О компании</a></li>
+						<li><a href="#id_projects">Проекты</a></li>
+						<li><a href="#id_contacts">Контакты</a></li>
+					</div>
 			<h2 class="header__bottom">
 				<div class="header__bottom__inner">
 					Стань владельцем высокодоходного бизнеса в самой востребованной нише международного рынка - "business information technology"
@@ -251,5 +261,39 @@
 			</div>
 		</div>
 	</footer>
+	<form action="#" class="popup">
+  <div class="popup__header">
+    Регистрация
+    <span class="close"> x </span>
+  </div>
+  <div class="inputs">
+    <div class="inputs__item">
+      <label for="telegram">Ваш Telegram</label>
+      <input placeholder="@ivanov_10" type="text" name="telegram">
+    </div>
+    <div class="inputs__item">
+      <label for="email">Ваш email</label>
+      <input placeholder="ivanov@mail.ru" type="email" name="email">
+    </div>
+    <div class="inputs__item">
+      <label for="password">Ваш пароль</label>
+      <input placeholder="Не меньше 8-ми символов" type="password" name="password">
+    </div>
+    <div class="inputs__item">
+      <label for="inviter">Ваш пригласитель</label>
+      <input value="@chalovavika" placeholder="" type="text" name="inviter">
+    </div>
+  </div>
+
+  <div class="popup__footer">
+    <div class="footer__check">
+      <input type="checkbox" name="check">
+      <label for="check">Я согласен с условиями</label>
+    </div>
+    <button type="submit">ГОТОВО</button>
+  </div>
+</form>
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

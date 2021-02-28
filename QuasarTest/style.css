@@ -25,10 +25,13 @@ body {
 
 .close {
 	display: inline-block;
+	width: 20px;
+	height: 20px;
 }
 
-.close: hover {
+.close:hover {
 	cursor: pointer;
+	text-decoration: underline;
 }
 .popup {
   //display: flex;
@@ -866,4 +869,56 @@ a {
 		font-size: 18px;
 		padding-top: 4%;
 	}
+}
+
+@media screen and (max-width: 370px) {
+	.text {
+		line-height: 170%;
+	}
+
+	.about__text {
+		line-height: 120%;
+		font-size: 18px;
+		padding-top: 4%;
+	}
+
+	.burger {
+		right: -35px;
+	}
+
+	.header__logo {
+		width: 198px;
+		height: 57px;
+		background-size: contain;
+	}
+
+	.item__text {
+		font-size: 14px;
+	}
+
+	.function__item {
+    	width: 250px;
+	}
+
+	.title {
+    	font-size: 24px;
+    }
+
+    .review1__title {
+    	width: 265px;
+    }
+
+    .partners {
+    	height: 480px;
+    }
+
+    .videos__item iframe {
+    	width: 277px;
+    	height: 205px;
+    }
+
+    .footer {
+    	font-size: 16px;
+    }
+
 }
